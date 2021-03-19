@@ -1,0 +1,305 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@500&family=Montserrat:wght@300&family=Roboto:wght@100&display=swap')
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: Arial;
+}
+
+header {
+	display: flex;
+	background-color: white;
+	width: 1200px;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+header img {
+	width: 150px;
+	margin-top: 10px;
+}
+
+.contener {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-left: 50px;
+}
+
+.nav1 ul {
+	display: flex;
+	list-style: none;
+	margin-right: 20px;
+	margin-top: 50px;
+}
+
+.nav1 ul li a {
+	text-decoration: none;
+	margin-left: 40px;
+	color: grey;
+	font-size: 17px;
+}
+
+.nav2 ul {
+	display: flex;
+	list-style: none;
+}
+
+.nav2 ul li a {
+	text-decoration: none;
+	color: #87CEFA;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 15 20 15 20;
+}
+
+.nav2 a:hover {
+	color: #28B4EE;
+}
+
+.don {
+	border-radius: 100px;
+	background-color: #4682B4;
+}
+
+/* Fin du header */
+
+.haut {
+	background-color: #4682B4;
+	display: flex;
+	justify-content: center;
+}
+
+.contener2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.centre img {
+	width: 500px;
+	height: 450px;
+}
+
+.centre {
+	margin-left: 50px;
+}
+
+.texthaut {
+	margin: 30 100 0 50;
+	width: 700px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.texthaut h2 {
+	font-size: 35px;
+}
+
+.imageeau img {
+	width: 250px;
+	height: 150px;
+}
+
+.imageeau {
+	margin-right: 50;
+}
+
+/* fin du premier bandeau */
+
+.titreobj {
+	display: flex;
+	justify-content: center;
+}
+
+.objectifs h2 {
+	text-transform: uppercase;
+	font-size: 25px;
+	color: white;
+	padding: 20px;
+	border-radius:100px;
+	background-color: #87CEFA;
+}
+
+.contener3 {
+	display: flex;
+	background-color: white;
+	font-size: 20px;
+	color: black;
+}
+
+.icones {
+	font-size: 50px;
+	padding: 30px;
+	border-radius:100px;
+	background-color: #87CEFA;
+	margin-top: 20px;
+	color: black;
+}
+
+.objectif {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 50%;
+	align-items: center;
+	text-align: center;
+	padding: 30px;
+	margin: 20px;
+	border-radius:100px;
+	background-color: white;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #87CEFA;
+}
+
+/* fin de la partie objectifs */
+
+.commissions {
+	background-color: #4682B4;
+}
+
+.titrecom {
+	display: flex;
+	justify-content: center; /* afficher le titre au centre */
+}
+
+.titrecom h2 {
+	text-transform: uppercase;
+	font-size: 25px;
+	color: white;
+	padding: 20px;
+	border-radius: 100px;
+	background-color: #87CEFA;
+}
+
+.contener4 {
+	display: flex;
+	justify-content: center; /* afficher le texte et l'image au centre */
+	align-items: center; /* afficher le texte et l'image face à face */
+}
+
+.nav3 ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 300px;
+	list-style: none;
+	text-align: center;
+}
+
+.nav3 ul li a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px;
+	border-radius: 100px;
+	background-color: white;
+}
+
+.nav3 a:hover {
+	background-color: #e0c56e; /* permet d'avoir le fond de l'élément en couleur lorsque l'on passe dessus avec la souris */
+}
+
+.rond img {
+	width: 450px;
+	height: 400px;
+}
+
+/* fin de la partie commissions */
+
+.soutien  {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 1000px;
+	text-align: center;
+	border-radius: 50px;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #F0F5F7;
+	background-image: url("../img/enfantsafrique4.jpg");
+	background-size: cover;
+}
+
+.phrase1 {
+	font-size: 35px;
+	color: white;
+	margin-top: 0;
+	background-color: #4682B4;
+	border-radius: 20px;
+}
+
+.phrase2 {
+	font-size: 20px;
+	color: white;
+}
+
+.phrasegras {
+	font-weight: bold;
+}
+
+.navsoutien ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+
+.navsoutien ul li a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 100px;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #4682B4;
+	background-color: #DCEDF4;
+	border-radius: 20px;
+	border-style: outset;
+}
+
+.navsoutien a:hover {
+	background-color: #C4EDFB;
+}
+
+/* fin de la partie adhésion et don */
+
+.partenaires {
+	display: flex;
+	justify-content: center; /* pour centrer la case horizentalement */
+	align-items: center; /* pour centrer la case verticalement */
+	background-color: #4682B4;
+	height: 100px;
+}
+
+.navpartenaires ul {
+	list-style: none;
+}
+
+.navpartenaires ul li a  {
+	color: white;
+	font-size: 35px;
+	padding: 10px;
+	background-color: #FF8C00;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.navpartenaires a:hover {
+	background-color: black;
+}

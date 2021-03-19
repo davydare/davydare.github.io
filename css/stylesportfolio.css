@@ -1,0 +1,694 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
+
+*, ::before, ::after {
+	box-sizing: border-box; /* important à mettre pour du responsive car cela permet aux box/cases de garder leur taille même si je change la dimension du padding ou autre */
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:#6B8E23;
+}
+
+.accueil {
+	height: 100vh; /* hauteur = 100% de la partie visible donc tte la page */
+	background-image: url("../img/Davy22.jpg");
+	background-size: cover;
+	background-position: top;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative; /* pour positioner mon nom en fonction de la section accueil */
+}
+
+nav {
+	width: 100%;
+	position: fixed; /* quand je descends avec la scrollbar la navigation descend aussi */
+	background-color: rgba(157, 173, 201, 0.2);
+}
+
+.navigation {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap; /* lorsque je rétrécis trop a fenêtre les éléments passent en dessous */
+	padding: 35px;
+	line-height: 25px; /* lorsque je rétrécis bcp les éléments s'empilent et donc on rajoute un écart */
+}
+
+.navigation li {
+	margin: 0 20px;
+}
+
+.navigation li a {
+	text-decoration: none;
+	font-size: 15px;
+	color: white;
+	text-transform: uppercase;
+}
+
+nav:hover {
+	background-color: rgba(157, 173, 201, 1);
+}
+
+.navigation a:hover {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.nom {
+	position: absolute;
+	top: 50%; /* avec position absolute et relative plus haut pour placer le nom, j'aurais pu aussi juste mettre un margin: auto pour placer au centre*/
+	text-align: center;
+	color: white;
+	font-size: 30px;
+}
+
+.davy {
+	font-family: 'Reggae One', Arial;
+	font-weight: bold;
+	font-size: 60px;
+}
+
+.portfolio {
+	font-size: 20px;
+	color: rgba(179, 166, 59, 0.5);
+}
+
+/* fin de la page d'acceuil */
+
+.sitesweb {
+	text-align: center;
+	padding: 10px;
+}
+
+.sitesweb h2 {
+	margin-top: 100px;
+	margin-bottom: 40px;
+	color: white;
+	font-size: 30px;
+}
+
+.creation {
+	font-weight: normal;
+}
+
+.containersite {
+	display: flex;
+	margin: 0 auto;
+	height: auto;
+	width: 70%;
+	align-items: center;
+	grid-gap: 10px;
+	margin-top: 40px;
+}
+
+.sitedescription {
+	width: 55%;
+}
+
+.sitedescription h3 {
+	color: black;
+	font-size: 27px;
+	text-decoration: underline;
+	text-underline-position: under;
+}
+
+.illustr1 {
+	color: #4682b4;
+	font-size: 35px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: black;
+}
+
+.illustr2 {
+	color: rgb(211, 165, 13);
+	font-size: 35px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: black;
+}
+
+.sitedescription p {
+	margin-top: 40px;
+	color: #000000bb;
+	font-size: 22px;
+	font-weight: 550;
+	text-align: justify;
+	line-height: 1.4;
+}
+
+.textesite::after {
+	margin-top: 15px;
+	display: block;
+	content: 'Langages de programmation : HTML / CSS';
+	font-style: italic;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.boutonsite {
+	font-size: 20px;
+	padding: 15px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	color: white;
+}
+
+.boutonsite:hover {
+	opacity: 0.8;
+}
+
+.boutonsite1 {
+	background-color: #4682b4;
+}
+
+.boutonsite2 {
+	background-color: rgb(211, 165, 13);
+}
+
+.imagepc {
+	width: 45%;
+}
+
+.imagepc img {
+	width: 100%;
+}
+
+/* fin de la partie sites web */
+
+.titre3D {
+	text-align: center;
+	padding: 10px;
+}
+
+.titre3D h2 {
+	margin-top: 100px;
+	margin-bottom: 40px;
+	color: white;
+	font-size: 30px;
+}
+
+.en3D {
+	font-weight: normal;
+}
+
+.container1 {
+	margin: 0 auto;
+	height: 900px;
+	width: 70%;
+	display: grid;
+	grid-template-columns: 3.64fr 2.58fr 3.78fr; /* ces valeurs sont complexes car j'ai du organiser le tout sans avoir à changer les dimensions des images */
+	grid-template-rows: 4fr 1fr 4fr 1fr;
+	grid-gap: 12px;
+}
+
+.ele img {
+	width: 100%;
+}
+
+.ele video {
+	width: 100%;
+}
+
+.ele1 {
+	grid-column: span 2;
+}
+
+.def1 {
+	grid-column: span 2;
+}
+
+.ele4 {
+	grid-column: span 2;
+}
+
+.def4 {
+	grid-column: span 2;
+}
+
+.def {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+
+
+.explication {
+	padding: 10px;
+	width: 280px;
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.explication p {
+	font-size: 20px;
+	padding: 15px 20px;
+	border-radius: 5px;
+	background-color: #ef8200;
+}
+
+.explication a {
+	text-decoration: none;
+	color: white;
+}
+
+.explication:hover {
+	background-color: white; /* permet d'avoir le fond de l'Ã©lÃ©ment en couleur lorsque l'on passe dessus avec la souris */
+}
+
+.container1 img:hover {
+	transform: scale(1.01);
+}
+
+.container1 video:hover {
+	transform: scale(1.01);
+}
+
+/* fin de la partie modélisation 3D */
+
+.titrecv {
+	text-align: center;
+	padding: 10px;
+}
+
+.titrecv h2 {
+	margin-top: 200px;
+	margin-bottom: 80px;
+	color: white;
+	font-size: 30px;
+}
+
+.mon {
+	font-weight: normal;
+}
+
+.container2 {
+	margin: 0 auto;
+	height: auto;
+	width: 70%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 0.5fr 3fr 3fr 3fr;
+	grid-gap: 20px;
+}
+
+.libelle {
+	font-size: 25px;
+	color: white;
+}
+
+.forme {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #456E3A;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+.date {
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.forme h3 {
+	color: #d4af37;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.forme p {
+	color: #cbcbcb;
+	margin-bottom: 15px;
+}
+
+.ecole {
+	font-size: 15px;
+	color: rgba(255,255,255, .4);
+}
+
+/* fin de la partie CV */
+
+
+.container3 {
+	padding: 200px 0px 100px 0px;
+	display: flex;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.photo img {
+	width: 600px;
+	animation: slideLeft 5s; /* fonctionne lorsque j'actualise */
+}
+
+@keyframes slideLeft {
+	from {
+		margin-left: -50%;
+		opacity: 0%;
+	}
+
+	to {
+		margin-left: 0%;
+		opacity: 100%;
+	}
+}
+
+.description {
+	margin-left: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.description h2 {
+	color: white;
+	font-size: 30px;
+}
+
+.aproposde {
+	font-weight: normal;
+}
+
+.description p {
+	font-size: 1rem; /* la taille de police dépend de celle définie dans le body */
+	margin-top: 35px;
+	color: #333;
+	text-align: justify;
+	line-height: 1.4; /* permet d'agrandir l'espace entre les lignes (1.2 par défaut) */
+}
+
+.telecharger {
+	padding: 0.6em 0.8em; /* pour que le padding dépende de la taille du mot dedans */
+	border-radius: 20px;
+	color: white;
+	font-size: 13px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #b3a63b;
+}
+
+/* fin de la partie à propos de */
+
+.mescompetences {
+	text-align: center;
+	padding: 10px;
+}
+
+.mescompetences h2 {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	color: white;
+	font-size: 30px;
+}
+
+.mes {
+	font-weight: normal;
+}
+
+.container4 {
+	padding-bottom: 100px;
+	margin: 0 auto;
+	height: auto;
+	width: 70%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+
+.forme2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: linear-gradient(0deg, #63d471 -50%, #233329 74%);
+	padding-bottom: 20px;
+}
+
+.forme2:hover {
+	box-shadow: 8px 8px 5px rgb(157, 173, 201);;
+	transform: scale(1.01);
+}
+
+.icones {
+	font-size: 70px;
+	padding: 20px;
+	border-radius: 100px;
+	margin: 30px 0;
+	background-color: rgb(157, 173, 201);
+}
+
+.forme2 h3 {
+	font-size: 20px;
+	color: rgb(157, 173, 201);
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.texte {
+	color: #cbcbcb;
+	text-align: justify;
+	margin: 0 20px 20px 20px;
+}
+
+/* fin de la partie des compétences */
+
+.contact {
+	margin-bottom: 100px;
+}
+
+.mecontacter {
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 50px;
+}
+
+.mecontacter h2 {
+	margin-top: 100px;
+	margin-bottom: 20px;
+	color: white;
+	font-size: 30px;
+}
+
+.me {
+	font-weight: normal;
+}
+
+.mecontacter img {
+	width: 120px;
+	border-radius: 100px;
+}
+
+.container5 {
+	margin: 0 auto;
+	height: 500px;
+	width: 70%;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 8fr;
+	grid-gap: 20px;
+}
+
+.libelle2 {
+	font-size: 28px;
+	color: white;
+}
+
+.ecrire {
+	width: 90%;  /* dÃ©fini la taille des cases des champs Ã  remplir */
+	height: 50px;
+	font-size: 20px;
+	margin-top: 7px; /* crÃ©er un espace entre les cases */
+	margin-bottom: 7px; /* crÃ©er un espace entre les cases */
+	padding: 20px; /* permet de décaler le placeholder pour pas qu'il colle à la case */
+}
+
+.commentaire {
+	width: 90%;  /* dÃ©fini la taille des cases des champs Ã  remplir */
+	height: 200px;
+	font-size: 20px;
+	margin-top: 7px; /* crÃ©er un espace entre les cases */
+	margin-bottom: 7px; /* crÃ©er un espace entre les cases */
+	padding: 20px;
+}
+
+fieldset {
+	border: 0; /* permet de supprimer le contour de base lorsqu'on applique un fieldset */
+}
+
+.minititre {
+	font-size: 15px;
+	color: rgba(255,255,255, .4);
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.renseignement {
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.envoyer {
+	width: auto;
+	height: auto;
+	font-size: 13px;
+	color: white;
+	text-transform: uppercase;
+	margin-top: 20px;
+	padding: 15px 20px;
+	border-radius: 100px;
+	border-style: none;
+	background-color: #b3a63b;
+}
+
+/* fin de la partie contact */
+
+footer {
+	color: white;
+	background-color: black;
+	padding-top: 100px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+/* FIN DU PORTFOLIO */
+
+
+
+@media screen and (max-width: 1250px) {
+
+	.accueil {
+		height: 100vh; /* je réduis la hauteur pour que ma tête soit tjrs centrée */
+		background-image: url("../img/Davy22.jpg");
+	}
+
+	/* fin de la partie Accueil */
+
+	.container1 {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+	}
+	
+	.ele2 {
+		text-align: center;
+	}
+
+	.ele2 video {
+		width: 60%;
+	}
+
+	.def2 {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.ele3 {
+		text-align: center;
+	}
+
+	.ele3 img {
+		width: 60%;
+	}
+
+	.def3 {
+		width: 60%;
+		margin: 0 auto;
+	}
+	
+	/* ordre de placement en dessous */
+
+	.ele1 {
+		order: 1;
+	}
+	
+	.def1 {
+		order: 2;
+	}
+
+	.ele2 {
+		order: 3;
+	}
+	
+	.def2 {
+		order: 4;
+	}
+
+	.ele3 {
+		order: 5;
+	}
+	
+	.def3 {
+		order: 6;
+	}
+
+	.ele4 {
+		order: 7;
+	}
+	
+	.def4 {
+		order: 8;
+	}
+
+	/* fin de la partie Portfolio */
+
+	.container2 {
+		width: 90%;
+	}
+
+	/* fin de la partie CV */
+
+	.container3 {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 90%;
+	}
+
+	.photo img {
+		width: 80%;
+	}
+	
+	.description {
+		margin: 0;
+		margin-top: 30px;
+		align-items: center;
+	}
+
+	/* fin de la partie à propos */
+
+	.container4 {
+		margin: 0 auto;
+		height: auto;
+		width: 70%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		grid-gap: 20px;
+	}
+
+	/* fin de la partie compétences */
+
+	.container5 {
+		width: 90%;
+	}
+
+	/* fin de la partie contact */
+
+}
+

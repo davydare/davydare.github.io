@@ -1,0 +1,126 @@
+<html> 
+	<head> 
+		<meta charset= "UTF-8" /> 
+		<title>Adhésion et/ou don</title>
+		<meta name="keywords" content="Adhésion et/ou don">
+		<LINK rel=stylesheet
+			type="text/css" href="css/stylesdon.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+	</head>
+	<body>
+		<section class="hautdepage">
+			<div class="logo">
+				<a href="Index.html"><img src="img/logoeau.png" alt="logoeau"></a>
+			</div>
+			<div class="textedon">
+				<p class="titreprincipal">Bulletin d'adhésion et/ou de don à Eau Vive Pau Pyrénées</p>
+				<p>Maison des Citoyens du Monde<br>
+				Esplanade Vandenberghe, 64140 Billère.</p>
+			</div>
+		</section>
+		<section class="formulaire">
+			<div class="page1">
+				<div class="contener1">
+					<h2>Adhésion</h2>
+					<form method="post" action="exemple.php" target="_blank">
+					<fieldset class="form form1">
+						<p>J’adhère à Eau Vive Pau Pyrénées et je règle ma cotisation pour l’année 2021 de 20 € : </p>
+						<label for="oui">Oui</label>
+						<input type="checkbox" id="ouiad" name="ouiad" value="20">
+						<label for="non">Non</label>
+						<input type="checkbox" id="nonad" name="nonad" value="0">
+					</fieldset>
+					<h2>Faire un don</h2>
+					<fieldset class="form form2">
+						<p>Je soutiens l’action d’Eau Vive Pau Pyrénées et je fais un don (*) de :</p>
+						<label for="30"> 30 € </label>
+						<input type="checkbox" id="don1" name="30euros" value="30"> 
+						<label for="60"> 60 € </label>
+						<input type="checkbox" id="don2" name="60euros" value="60"> 
+						<label for="120"> 120 € </label>
+						<input type="checkbox" id="don3" name="120euros" value="120">
+						<p>Ou choisissez un autre montant :</p>
+						<label for="montantlibre"></label> 
+						<input type="number" id="montant" name="montant" placeholder="Montant libre">
+						<i class="fas fa-euro-sign"></i>
+					</fieldset>
+					</form>
+				</div>
+				<div class="contener2">
+					<p>* DÉFISCALISATION : Un reçu fiscal vous sera envoyé avant février 2021 : 66 % de votre adhésion/don sont déductibles de votre impôt sur vos revenus dans la limite de 20% de votre revenu imposable.</p>
+					<table cellpadding="10">
+						<tr> <th>Votre Don/Adhésion</th> <th>Votre dépense réelle</th> </tr>
+						<tr> <td>30 €</td> <td>10 €</td> </tr>
+						<tr> <td>60 €</td> <td>20 €</td> </tr>
+						<tr> <td>120 €</td> <td>40 €</td> </tr>
+					</table>
+				</div>
+			</div>
+			<div class="page2">
+				<div class="coordonnees">
+					<h2>Mes coordonnées</h2>
+					<form method="post" action="exemple.php" target="_blank"></form>
+					<fieldset class="form form3">
+						<label for="email"></label> 
+						<input type="text" id="email" name="email" placeholder="Email *" required="required"> <br>
+						<label for="civilite"></label>
+						<select id="civilite" name="civilite" required="required">
+							<optgroup label="Civilité *"></optgroup>
+							<option value="monsieur">Monsieur</option>
+							<option value="madame">Madame</option>
+						</select> <br>
+						<label for="prenom"></label> 
+						<input type="text" id="prenom" name="prenom" placeholder="Prénom *" required="required"> <br>
+						<label for="nom"></label> 
+						<input type="text" id="nom" name="nom" placeholder="Nom *" required="required"> <br>
+						<label for="adresse"></label> 
+						<input type="text" id="adresse" name="adresse" placeholder="Adresse *" required="required"> <br>
+						<label for="complement"></label> 
+						<input type="text" id="complement" name="complement" placeholder="Complément adresse"> <br>
+						<label for="codepostal"></label> 
+						<input type="text" id="codepostal" name="codepostal" placeholder="Code postal *" required="required"> <br>
+						<label for="ville"></label>
+						<input type="text" id="ville" name="ville" placeholder="Ville *" required="required"> <br>
+						<select id="pays" name="pays" required="required">
+							<optgroup label="Pays *"></optgroup>
+							<option value="france">France</option>
+							<option value="belgique">Belgique</option>
+						</select>
+						<p>* Champs obligatoires.</p>
+					</fieldset>
+					</form>
+				</div>
+				<div class="reglement">
+					<h2>Mon règlement</h2>
+					<div class="paiement">
+						<p class="paiementcarte">Paiement par carte bancaire</p>
+						<p class="valider"><a href="#">Valider paiement</a></p>
+					</div>
+					<div class="paiement">
+						<img src="img/paypal.png" alt="Paypal">
+						<p class="valider"><a href="#">Valider paiement</a></p>
+					</div>
+					<div class="paiement">
+						<p class="paiementcarte">Par chèque</p>
+						<p class="valider"><a href="#">Valider paiement</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="informations">
+			<div class="info pourquoi">
+				<h3>Pourquoi donner ?</h3>
+				<p>Depuis sa création, la mission d’Eau Vive est de faire en sorte que les hommes et les femmes qu’elle soutient deviennent des acteurs en pleine responsabilité de leur devenir et en capacité d’assurer la pérennité des actions qu’ils entreprennent. Pour cela Eau Vive intervient dans les domaines de l'eau, de l'assainissement et de la santé, de l'agriculture et de la sécurité alimentaire, de l'environnement et de l'économie locale. Afin d'être le plus efficace possible, Eau Vive fait le choix d'utiliser les dons selon les besoins des programmes et de ne pas affecter les dons, sauf demande expresse.</p>
+			</div>
+			<div class="info vieprivee">
+				<h3>Respect de votre vie privée</h3>
+				<p>Les données communiquées sont nécessaires à Eau Vive (responsable de traitement) pour la prise en compte et le traitement de votre don. Elles seront également indispensables pour vous envoyer votre reçu fiscal et à des fins de prospection. La base légale du traitement réside dans l’exécution du contrat de donation (en tant que contrat unilatéral).</p>
+				<p>Pour plus d’informations sur les durées de conservation de vos données, les destinataires et les transferts de données, veuillez consulter notre politique de protection des données. Vous disposez d’un droit d’accès, de rectification, et en cas de motifs légitimes de suppression, de limitation et d’opposition au traitement de vos données. Vous bénéficiez également du droit à la portabilité de vos données et du droit de donner des directives sur le sort de vos données en cas de décès.</p>
+			</div>
+			<div class="info securite">
+				<h3>Donner en toute confiance</h3>
+				<p>Ce site internet est 100% sécurisé. Toutes les informations bancaires pour traiter le paiement sont totalement sécurisées. Elles ne sont en aucun cas conservées sur nos systèmes informatiques. Grâce au cryptage SSL de vos données bancaires, vous êtes assurés de la fiabilité de vos transactions sur Internet. Pour en être certains : l’espace est sécurisé dès que l’URL commence par https.</p>
+			</div>
+		</section>
+	</body>
+</html>

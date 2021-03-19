@@ -1,0 +1,137 @@
+<html> 
+	<head> 
+		<meta charset= "UTF-8" /> 
+		<title>Contactez-nous</title>
+		<meta name="keywords" content="Association">
+		<LINK rel=stylesheet
+			type="text/css" href="css/stylescontact.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<a href="Index.html"><img src="img/logoeau.png" alt="logoeau"></a>
+			<div class="contener">
+				<nav class="nav1">
+					<ul>
+						<li><a href="#"><i class="fas fa-search"></i></a></li>
+						<li><a href="#">French</a></li>
+					</ul>
+				</nav>
+				<nav class="nav2">
+					<ul>
+						<li><a href="Index.html">Accueil</a></li>
+						<li><a href="Commissions.html">Les commissions</a></li>
+						<li><a href="Actions.html">Nos actions</a></li>
+						<li><a href="Temoignages.html">Témoignages</a></li>
+						<li><a href="Contactez-nous.html">Contactez-nous</a></li>
+						<li ><a href="Fairedon.html" target="_blank" class="don">Faire un don</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>	
+		<section id="contact1">
+		
+			<div class="titreprincipal">
+				<h1>Contactez-nous</h1>
+			</div>
+			
+			<div class="contact">	
+				<form id="form" method="post" action="contact.php">
+			
+				<fieldset>
+					<legend>Vos données personnelles</legend>
+					<div>
+					<p></p>
+					<label for="Name">Nom :</label>
+						<div>
+						<input type="text" id="Name" name="Name" required>
+						</div>
+					</div>
+					<div>
+					<label for="Name">Prénom :</label>
+						<div>
+						<input type="text" id="prenom" name="prenom" required>
+						</div>
+					</div>
+					<div>
+					<label for="Email">Adresse e-mail :</label>
+						<div class="fcf-input-group">
+						<input type="email" id="Email" name="Email" required>
+						</div>
+					</div>
+					<p></p>
+				</fieldset>
+			
+				<fieldset>
+					<p></p>
+					<legend>Dans quel pays résidez-vous ?</legend>
+					<select id="pays" name="pays"> 
+						<optgroup label="Europe"> 
+							<option value="france">France</option> 
+							<option value="belgique">Belgique</option> 
+							<option value="suisse">Suisse</option> 
+							<option value="lux">Luxembourg</option>
+						</optgroup> 
+						<optgroup label="Afrique"> 
+							<option value="algerie">Algérie</option> 
+							<option value="tunisie">Tunisie</option> 
+							<option value="Maroc">Maroc</option>
+							<option value="Cameroun">Cameroun</option>
+							<option value="RDC">Congo RDC</option>
+						</optgroup>	
+						<optgroup label="Asie">
+							<option value="laos">Laos</option>
+							<option value="Chine">Chine</option>
+							<option value="Japon">Japon</option>
+							<option value="Hong">Hong Kong</option>
+						</optgroup>		
+						<optgroup label="Amérique">
+							<option value="us">États-Unis</option>
+							<option value="Canada">Canada</option>
+						</optgroup>		
+						<optgroup label="Océanie">
+							<option value="nz">Nouvelle-Zélande</option>
+							<option value="australie">Australie</option>
+						</optgroup>	
+						<option value="autre">Autre</option>
+					</select>
+					<p><label for="si">Si autre, veuillez spécifier ci-dessous :</label><br/></p>					
+					<p><textarea name="si" rows=2 cols=30></textarea></p>		
+				</fieldset>			
+			
+				<fieldset>
+				<legend>Votre message</legend>
+				<p></p>
+					<div>
+						<label for="Message"></label>
+							<div>
+							<textarea id="Message" name="Message" rows=15 cols=100 maxlength="3000" required></textarea>
+							</div>
+					</div>
+				<p></p>
+				</fieldset>
+
+				<div>
+					<p></p>
+					<button type="submit" id="form-button">Envoyer</button>
+				</div>			
+			</div>
+			
+			<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+			<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+			var setting = {"height":531,"width":803,"zoom":13,"queryString":"Maison des Citoyen-ne-s du Monde, Esplanade Vandenberghe, 64140 Billère, France","place_id":"ChIJs7sBlRVPVg0RkxolryIf3Hk","satellite":false,"centerCoord":[43.30611631496803,-0.39471515000000235],"cid":"0x79dc1f22af251a93","lang":"fr","cityUrl":"/france/pau-2673","cityAnchorText":"Carte de Pau, Sud de la France, France","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"352310"};
+			var d = document;
+			var s = d.createElement('script');
+			s.src = 'https://1map.com/js/script-for-user.js?embed_id=352310';
+			s.async = true;
+			s.onload = function (e) {
+			window.OneMap.initMap(setting)
+			};
+			var to = d.getElementsByTagName('script')[0];
+			to.parentNode.insertBefore(s, to);
+			})();</script><a href="https://1map.com/fr/map-embed">1 Map</a>
+			</div>
+		
+		</section>
+	</body>
+</html>

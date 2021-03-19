@@ -1,0 +1,416 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*, ::before, ::after {
+	box-sizing: border-box; /* important à mettre pour du responsive car cela permet aux box/cases de garder leur taille même si je change la dimension du padding ou autre */
+	margin: 0;
+	padding: 0;
+}
+
+.body {
+	font-size: 25px;
+	font-family: Arial, sans-serif;
+}
+
+.partie1 {
+	height: 150vh;
+	margin: 0 auto;
+	background-image: url("../img/jungled.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 50px;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0, 0.3);
+	transition: 0.5s;
+}
+
+.navigation img {
+	width: 50px; /* juste en bas j'utilise un filtre pour changer la couleur car c'est une image svg */
+	filter: invert(69%) sepia(82%) saturate(1105%) hue-rotate(348deg) brightness(89%) contrast(98%);
+}
+
+.navigation li {
+	padding: 10px 12px;
+	list-style: none;
+}
+
+.navigation li a {
+	font-size: 1.2em;
+	color: white;
+	text-decoration: none;
+}
+
+.navigation li a:hover {
+	color:rgb(226, 154, 19);
+	transition: 0.3s;
+}
+
+.navigation:hover {
+	background: rgba(0,0,0, 0.7);
+}
+
+/* fin de la navigation */
+
+
+.container1 {
+	display: grid;
+	margin: 0 auto;
+	margin-top: 5vh;
+	width: 70%;
+	height: 100vh;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+
+.titreprincip {
+	margin-top: 2vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titreprincip h1 {
+	color: white;
+	font-family: 'Bebas Neue', 'Times New Roman', Times, serif;
+	font-size: 5em;
+}
+
+.titreprincip h1::before {
+	content: '';
+	display: inline-block;
+	height: 4px;
+	width: 80px;
+	background-color: white;
+	margin: 10px 30px;
+}
+
+.titreprincip h1::after {
+	content: '';
+	display: inline-block;
+	height: 4px;
+	width: 80px;
+	background-color: white;
+	margin: 10px 30px;
+}
+
+.forme:hover {
+	transform: scale(1.02);
+}
+
+.tigre1 {
+	background-image: url("../img/tigre1.jpg");
+	background-size: cover;
+	background-position: left; /* quand je rétrécis la fenêtre, l'image se retréci en gardant la partie gauche visible */
+}
+
+.tigre2 {
+	background-image: url("../img/tigre2.jpg");
+	background-size: cover;
+	background-position: bottom;
+}
+
+.tigre3 {
+	background-image: url("../img/tigre3.jpg");
+	background-size: cover;
+	background-position: right;
+	grid-column: 3/4;
+	grid-row: 1/3;
+}
+
+.tigre4 {
+	background-image: url("../img/tigre4a.jpg");
+	background-size: cover;
+	background-position: center;
+	transform: scaleX(-1); /* cela permet d'inverser l'image */
+	grid-column: 1/3;
+}
+
+/* fin de la partie 1 */
+
+.partie2 {
+	padding: 50px;
+}
+
+.container2 {
+	display: flex;
+	margin: 0 auto;
+	width: 70%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 30px;
+}
+
+h2 {
+	font-size: 2.5em;
+	margin-bottom: 35px;
+}
+
+h2:after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 80px;
+	background-color: rgb(226, 154, 19);
+}
+
+.titretexte p {
+	line-height: 1.4;
+	margin-bottom: 10px;
+	text-align: justify;
+	font-size: 1.2em;
+}
+
+.titretexte {
+	flex-basis: 65%;
+}
+
+.illustration {
+	flex-basis: 35%;
+}
+
+.illustration img {
+	width: 100%;
+	height: auto;
+	animation: apparition 5s;
+}
+
+@keyframes apparition {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+/* fin de la partie 2 */
+
+.partie3 {
+	padding: 50px;
+	background-color: black;
+	color: white;
+}
+
+.textebas {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.textebas p {
+	text-align: justify;
+	margin-bottom: 20px;
+	line-height: 1.4;
+	font-size: 1.2em;
+}
+
+.illustration2 {
+	flex-basis: 35%;
+}
+
+.illustration2 img {
+	margin-top: 80px;
+	width: 100%;
+	height: auto;
+	animation: apparition 5s;
+}
+
+/* fin de la partie 3 */
+
+.partie4 {
+	padding: 50px;
+  	background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+}
+
+.containerphysique {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 70%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 30px;
+}
+
+.titretextephysique {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+.titretextephysique p {
+	line-height: 1.4;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.illustrationphysique img {
+	max-width: 200px;
+	height: auto;
+	border-radius: 200px;
+}
+
+/* fin de la partie 4 */
+
+
+.containeractivite {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 4fr 3.5fr;
+}
+
+.titretexteactivite {
+	padding: 30px;
+}
+
+.titretexteactivite p {
+	line-height: 1.4;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+.illustrationactivite {
+	background-image: url("../img/tigreactivite3.png");
+	background-size: cover;
+	background-position: left;
+}
+
+/* fin de la partie 5 */
+
+footer {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	height: 20vh;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+	.partie1 {
+		height: 100vh; /* je passe de 150 à 100 pour que ce soit plus ergonomique */
+		margin: 0 auto;
+		padding: 50px;
+	}
+
+	.navigation li a {
+		font-size: 1.5em;
+		color: white;
+		text-decoration: none;
+	}
+
+	/* fin de la partie organisation nav, titre */
+
+	.container1 {
+		display: flex;
+		margin: 0 auto;
+		flex-direction: column;
+		width: 80%; /* j'augmente un peu la largeur */
+		height: auto;
+		margin-top: 3vh; /* je diminue légérement la hauteur */
+		grid-gap: 15px; /* j'augmente légérement l'espace entre les images */
+	}
+
+	.forme {
+		height: 15vh; /* je définie la hauteur de chaque image */
+	}
+
+	.tigre1 {
+		background-image: url("../img/tigre1.jpg");
+		background-size: cover;
+		background-position: left; /* lorsque je rétrécis la fenêtre, l'image se retréci en gardant la partie gauche visible */
+	}
+	
+	.tigre2 {
+		background-image: url("../img/tigre2.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.tigre3 {
+		background-image: url("../img/tigre3.jpg");
+		background-size: cover;
+		background-position: right;
+	}
+	
+	.tigre4 {
+		background-image: url("../img/tigre4a.jpg");
+		background-size: cover;
+		background-position: center;
+		transform: scaleX(-1); /* cela permet d'inverser l'image */
+	}
+	
+
+	/* fin de la partie d'organisation des photos de tigre en première page */
+
+	.container2 {
+		display: flex;
+		flex-direction: column; /* on passe en mode colonnes */
+		margin: 0 auto;
+		width: 80%;
+		height: auto;
+		grid-gap: 30px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.illustration {
+		text-align: center;
+	}
+
+	.illustration img {
+		width: 50%;
+		height: auto;
+		animation: apparition 5s;
+	}
+
+	.illustration2 {
+		order: 1; /* je défini l'ordre car sinon l'image se situe avant le texte */
+		text-align: center;
+	}
+
+	.illustration2 img {
+		margin-top: 0; /* avant il y avait une margin donc je l'enlève */
+		width: 50%;
+		height: auto;
+		animation: apparition 5s;
+	}
+
+	/* fin de la partie 1 et 2 avec texte et image */
+
+	.containerphysique {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		width: 80%;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+		grid-gap: 30px;
+	}
+
+	/* fin de la partie description physique */
+}

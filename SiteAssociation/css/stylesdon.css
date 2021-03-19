@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:wght@500&family=Montserrat:wght@300&family=Roboto:wght@100&display=swap')
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: Arial;
+	background-image: url("../img/paysageafrique2.png");
+	background-size: cover;
+	width: 1000px;
+}
+
+.hautdepage {
+	display: flex;
+	width: 1000px;
+	background-color: white;
+	border-style: solid;
+	border-color: #4682B4;
+}
+
+.textedon {
+	text-align: center;
+}
+
+.titreprincipal {
+	font-size: 30px;
+	color: #4682B4;
+	font-weight: bold;
+}
+
+.logo img {
+	width: 150px;
+	padding-top: 10px;
+}
+
+/* fin de la partie haute */
+
+
+.formulaire {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.page1 {
+	display: flex;
+	font-size: 20px;
+}
+
+.page1 h2 {
+	margin-bottom: 0;
+	background-color: black;
+	padding: 10px;
+	color: white;
+}
+
+.contener1 {
+	width: 800px;
+	margin-top: 30px;
+}
+
+.contener2 {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-left: 15px;
+	padding: 20px;
+	border-style: groove;
+	height: 340px;
+	margin-top: 90px;
+	background-color: #CBDAFF;
+}
+
+table {
+	text-align: center;
+}
+
+table tr {
+	text-align: center;
+	font-size: 18px;
+}
+
+
+.form1 {
+	background-color: white;
+}
+
+.form2 {
+	background-color: white;
+}
+
+#montant {
+	width: 200px; /* correspond à la taille de la case du montant libre */
+	height: 30px;
+}
+
+/* fin de la première partie c'est à dire partie adhésion, don et défiscalisation */
+
+.page2 {
+	display: flex;
+	background-color: white;
+	font-size: 20px;
+}
+
+.page2 h2 {
+	background-color: black;
+	color: white;
+	padding: 10px 0px 10px 10px;
+	margin: 0;
+}
+
+.coordonnees {
+	width: 550px;
+}
+
+.coordonnees h2 {
+	width: 990px; /* 990 car à cause du padding de 10px si je met 1000px ici alors le cadre noir déborde */
+}
+
+.coordonnees input {
+	width: 400px;  /* défini la taille des cases des champs à remplir */
+	height: 50px;
+	margin-top: 7px; /* créer un espace entre les cases */
+	margin-bottom: 7px; /* créer un espace entre les cases */
+	text-transform: uppercase;
+}
+
+.coordonnees select {
+	width: 400px;  /* défini la taille des cases pré-selectionnées à remplir */
+	height: 50px;
+	margin-top: 7px; /* créer un espace entre les cases */
+	margin-bottom: 7px; /* créer un espace entre les cases */
+}
+
+.reglement {
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* je place la partie du règlement au milieu de la page */
+	width: 450px;
+	height: 470px;
+	margin-top: 150px;
+	margin-right: 100px;
+	text-align: center;
+	background-color: #DCDCDC;
+
+}
+
+.reglement img {
+	width: 150px;
+}
+
+.paiementcarte {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.paiement {
+	margin: 15px;
+}
+
+.paiement a {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	background-color: red;
+	margin: 20px;
+}
+
+.paiement a:hover {
+	background-color: #9F0D0D; /* permet d'avoir le fond de l'élément en couleur lorsque l'on passe dessus avec la souris */
+}
+
+fieldset {
+	border: 0; /* permet de supprimer le contour de base lorsqu'on applique un fieldset */
+}
+
+/* fin de la partie coordonnées et règlement */
+
+.informations {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding: 20px;
+	background-color: black;
+	color: white;
+	text-align: justify;
+}
+
+.informations h3 {
+	text-align: center;
+}
+
+.info {
+	width: 300px;
+}
+
+/* fin de la partie informations */
