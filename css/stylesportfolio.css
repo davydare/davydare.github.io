@@ -105,6 +105,7 @@ nav:hover {
 	align-items: center;
 	grid-gap: 10px;
 	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .sitedescription {
@@ -576,6 +577,39 @@ footer {
 	}
 
 	/* fin de la partie Accueil */
+	
+	.containersite {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		height: auto;
+		width: 80%; /* j'augmente légérement l'espace */
+		align-items: center;
+		grid-gap: 10px;
+		margin-top: 20px; /* je diminue légérement l'espace entre le titre et le container */
+		margin-bottom: 60px; /* je créé un espace supplémentaire */
+	}
+	
+	.sitedescription {
+		width: 80%; /* j'augmente la taille de l'enfant */
+		text-align: center; /* je met le texte au centre */
+		margin-bottom: 40px; /* je met un espace entre les 2 parties */
+	}
+
+	.sitedescription p {
+		margin-top: 40px;
+		color: #000000bb;
+		font-size: 22px;
+		font-weight: 550;
+		text-align: center; /* je met le texte au centre */
+		line-height: 1.4;
+	}
+
+	.imagepc {
+		width: 60%; /* j'augmente la taille de l'enfant */
+	}
+
+	/* fin de la partie création de sites */
 
 	.container1 {
 		height: auto;
